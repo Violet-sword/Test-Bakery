@@ -79,6 +79,95 @@ nav li {
 
 /* FEATURES */
 
+.features {
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .features a {
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        width: 200px;
+    }
+
+        .features a figure {
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 200px;
+        }
+
+            .features a figure img {
+                border: 1px solid white;
+                border-radius: 50%;
+                box-shadow: gray 0 0 10px;
+                width: 200px;
+            }
+
+.about-page-features {
+    background: white;
+    color: gray;
+    padding: 20px;
+}
+
+    .about-page-features div {
+        min-height: 300px;
+    }
+
+        .about-page-features div img {
+            box-shadow: gray 0 0 10px;
+            height: 300px;
+            width: auto;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+    .about-page-features .text {
+        text-indent: 40px;
+        font-size: 20px;
+    }
+
+    .about-page-features h2 {
+        padding: 20px;
+        text-align: center;
+    }
+
+.menu-feature {
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .menu-feature .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        width: 300px;
+    }
+
+        .menu-feature .container img {
+            box-shadow: gray 0 0 10px;
+            width: 150px;
+            float: left;
+            aspect-ratio: 1;
+        }
+
+        .menu-feature .container .text {
+            padding-left: 20px;
+            width: 100px;
+        }
+
 .sub-page-features {
     background: white;
     color: gray;
@@ -98,29 +187,54 @@ nav li {
             width: 200px;
         }
 
-.features {
+/* Imaginary People Section */
+
+#imaginary-people {
     background: white;
     color: gray;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-    .features figure {
-        margin: auto;
-        padding: 5px;
+    #imaginary-people h2 {
         text-align: center;
-        text-transform: uppercase;
-        width: 200px;
+        margin-bottom: 20px;
     }
 
-        .features figure img {
-            border: 1px solid white;
+.people-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .people-list li {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .people-list figure {
+        margin: 0;
+        padding: 0;
+    }
+
+        .people-list figure img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            box-shadow: gray 0 0 10px;
-            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
         }
+
+            .people-list figure img:hover {
+                transform: scale(1.1);
+            }
+
+    .people-list figcaption {
+        margin-top: 10px;
+        font-size: 16px;
+    }
 
 /* FOOTER */
 
